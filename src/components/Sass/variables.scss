@@ -1,0 +1,67 @@
+// Colors
+
+$primary-color: #1b7ff6;
+$secondary-color: #06a77d;
+$secondary-color-two:#262a62;
+$secondary-color-three: #fec400;
+$white-color: #f5f7fb;
+
+// Variables
+
+$mobileS: 320px;
+$mobileM: 375px;
+$mobileL: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptopL: 1440px;
+$desktop: 2560px;
+
+// media queries
+
+@mixin media($media) {
+  @if $media == mobileS {
+    @media (min-width: $mobileS) {
+      @content;
+    }
+  } @else if $media == mobileM {
+    @media (min-width: $mobileM) {
+      @content;
+    }
+  } @else if $media == mobileL {
+    @media (min-width: $mobileL) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
+  @else if $media == laptop {
+    @media (min-width: $laptop) {
+      @content;
+    }
+  }
+  @else if $media == laptopL {
+    @media (min-width: $laptopL) {
+      @content;
+    }
+  }
+  @else if $media == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
+// @Mixin
+
+@mixin font($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+// @include
+
+%font {
+  font-family: 'Acme', sans-serif;
+}
