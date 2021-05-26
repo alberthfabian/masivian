@@ -7,7 +7,7 @@ Prueba para aplicar al cargo de Desarrollador Frontend
 Descargar una copia del repositorio comprimido en tu maquina local o realiza un clone.
 
 ```
-git clone https://github.com/alberthfabian/serempre.git
+git clone https://github.com/alberthfabian/masivian.git
 ```
 
 Instalación de dependencias.
